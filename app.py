@@ -39,7 +39,7 @@ def login_user(username, password):
 
 #This all is for Load model and Data .
 model = pickle.load(open("model.pkl", "rb"))
-
+#All this .csv files are available in the Kaggle
 symptoms_df = pd.read_csv("data/symtoms_df.csv")
 precautions_df = pd.read_csv("data/precautions_df.csv")
 workout_df = pd.read_csv("data/workout_df.csv")
@@ -218,4 +218,5 @@ elif choice == "History":
             **🩺 Predicted Disease:** `{entry.get('prediction', 'N/A')}`  
             **🕒 Timestamp:** `{entry.get('timestamp', 'N/A')}`
             """)
+
 
