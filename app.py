@@ -209,7 +209,7 @@ if choice == "Home": #This is for Home Page(after login if user want homepage th
 elif choice == "History":
         st.title("🕓 Your Search History")
         history = history_col.find({"username": st.session_state.username}).sort("timestamp", -1)
-
+#This format will be seen in the History json format
         for entry in history:
             st.markdown(f"""
             ---
@@ -218,3 +218,4 @@ elif choice == "History":
             **🩺 Predicted Disease:** `{entry.get('prediction', 'N/A')}`  
             **🕒 Timestamp:** `{entry.get('timestamp', 'N/A')}`
             """)
+
