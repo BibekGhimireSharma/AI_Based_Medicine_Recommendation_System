@@ -106,7 +106,7 @@ st.sidebar.title("🔐 User Panel")
 if "logged_in" not in st.session_state:
     st.session_state.logged_in = False
     st.session_state.username = ""
-
+#This portion is for login and registration selection buttom
 menu = ["Login", "Register"]
 if not st.session_state.logged_in:
     choice = st.sidebar.radio("Select Option", menu)
@@ -218,5 +218,6 @@ elif choice == "History":
             **🩺 Predicted Disease:** `{entry.get('prediction', 'N/A')}`  
             **🕒 Timestamp:** `{entry.get('timestamp', 'N/A')}`
             """)
+
 
 
