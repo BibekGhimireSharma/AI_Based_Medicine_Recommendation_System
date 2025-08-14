@@ -9,7 +9,7 @@ from datetime import datetime
 from sklearn.preprocessing import LabelEncoder
 from PIL import Image
 
-#This line is for page configuration
+#This line is for page configurationn
 st.set_page_config(page_title="AI-Based Medicine System", layout="wide")
 
 #This portion is to Setup our Database i.e MongoDB
@@ -221,6 +221,7 @@ elif choice == "History":
             **🩺 Predicted Disease:** `{entry.get('prediction', 'N/A')}`  
             **🕒 Timestamp:** `{entry.get('timestamp', 'N/A')}`
             """)
+
 
 
 
