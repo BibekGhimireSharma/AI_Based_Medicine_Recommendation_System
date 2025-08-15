@@ -56,7 +56,7 @@ le.fit(df["prognosis"])
 disease_dict = dict(zip(le.transform(le.classes_), le.classes_))
 symptoms_dict = {symptom: idx for idx, symptom in enumerate(symptoms_list)}
 #Disease_dict helps convert back the number to actual disease name.
-#Symptoms_dict maps each symptom to its index.
+#Symptoms_dict maps each symptom to its index..
 
 
 #This is the actual Prediction function of the code
@@ -221,6 +221,7 @@ elif choice == "History":
             **🩺 Predicted Disease:** `{entry.get('prediction', 'N/A')}`  
             **🕒 Timestamp:** `{entry.get('timestamp', 'N/A')}`
             """)
+
 
 
 
