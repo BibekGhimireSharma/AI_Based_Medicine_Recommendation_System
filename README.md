@@ -2,7 +2,7 @@
 
 An intelligent web application built using **Streamlit** and **MongoDB** that predicts possible diseases based on symptoms entered by the user. The system allows **user authentication**, **prediction history tracking**, and a **user-friendly interface** for personalized health insights.
 
----
+-----
 
 ## 🚀 Features
 
